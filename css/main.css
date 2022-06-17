@@ -12,10 +12,10 @@ body {
 
 .container{
 	max-width: 1200px;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
 	flex-flow: row wrap;
 }
 
@@ -41,21 +41,26 @@ p {
 	line-height: 21px;
 }
 
+ul {
+	margin: 0;
+}
+
 /*The widths are in a percentage!*/
 header {
-	height: auto;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	text-align: center;
 	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-flow: row wrap;
 }
 
 header h1 {
-	border-bottom: 3px solid #77a466;
-	padding-bottom: 18px;
+	margin: 0;
+    padding: 38px 20px 20px 20px; 
+    border-bottom: 3px solid #77a466; 
+    width: 100%;
 }
 
 header h1 span {
@@ -63,22 +68,21 @@ header h1 span {
 }
 
 header nav {
-	text-align: center;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	padding: 20px 0; 
+    width: 100%; 
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: .875em;	
+	font-size: .875em;
+	padding: 10px 0;
+	list-style: none;	
 }
 header nav ul li a{
 	text-decoration: none;
@@ -88,13 +92,11 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	width: 90%;
 	flex-flow: row wrap;
-	text-align: left;
 }
 
 .main-image {
@@ -110,6 +112,7 @@ header nav ul li a{
 }
 .main-title h2 {
 	text-align: left;
+	padding: 5px 0;
 	color: #77a466;
 }
 .main-title p {
@@ -147,14 +150,12 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50%;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
 	flex-flow: row wrap;
 }
 footer span {
@@ -162,4 +163,21 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+@media only screen and (min-width:768px) {
+	/*tablet styles here*/
+	.bottom-section {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+	}
+
+	.section-one, .section-two, .section-three {
+		width: 33%
+	}
+}
+
+@media only screen and (min-width:1200px) {
+	/*desktop styles here*/
 }
