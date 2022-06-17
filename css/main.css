@@ -43,7 +43,7 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 300px;
+	height: auto;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
